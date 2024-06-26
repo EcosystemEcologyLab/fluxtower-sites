@@ -1,1 +1,4 @@
 .Rproj.user
+
+#raw data files
+/data/*
