@@ -1,0 +1,511 @@
+dataset,site_name,site_id,lon,lat,crs,buffer_radius_m
+NEON,Harvard Forest,HARV,-72.17265999999995,42.53690000000006,WGS 84,1000
+NEON,Smithsonian Conservation Biology Institute,SCBI,-78.13949999999994,38.89292000000006,WGS 84,1000
+NEON,Ordway-Swisher Biological Station,OSBS,-81.99342999999999,29.68927000000008,WGS 84,1000
+NEON,Guanica Forest,GUAN,-66.86869999999993,17.96955000000003,WGS 84,500
+NEON,UNDERC,UNDE,-89.53724999999997,46.23388000000006,WGS 84,1000
+NEON,Konza Prairie Biological Station,KONZ,-96.56308999999999,39.10077000000007,WGS 84,500
+NEON,Oak Ridge,ORNL,-84.28259999999995,35.96412000000004,WGS 84,500
+NEON,Talladega National Forest,TALL,-87.39326999999997,32.95046000000008,WGS 84,500
+NEON,Woodworth,WOOD,-99.24135599999994,47.12822800000004,WGS 84,1000
+NEON,Central Plains Experimental Range,CPER,-104.745602469,40.81553413400008,WGS 84,300
+NEON,LBJ National Grassland,CLBJ,-97.56999999999994,33.40123000000006,WGS 84,500
+NEON,Yellowstone Northern Range (Frog Rock),YELL,-110.53914,44.95348000000007,WGS 84,500
+NEON,Niwot Ridge Mountain Research Station,NIWO,-105.58237,40.05425000000003,WGS 84,300
+NEON,Santa Rita Experimental Range,SRER,-110.83549,31.91068000000007,WGS 84,500
+NEON,Onaqui,ONAQ,-112.45244,40.17759000000007,WGS 84,1000
+NEON,Wind River Experimental Forest,WREF,-121.951912,45.82048800000007,WGS 84,300
+NEON,San Joaquin,SJER,-119.73228,37.10878000000002,WGS 84,1000
+NEON,Toolik Lake,TOOL,-149.37047,68.66109000000006,WGS 84,1000
+NEON,Caribou-Poker Creeks Research Watershed,BONA,-147.50258,65.15401000000003,WGS 84,300
+NEON,Caribou-Poker Creeks Research Watershed,BONA,-147.50258,65.15401000000003,WGS 84,300
+NEON,Pu'u Maka'ala Natural Area Reserve,PUUM,-155.31731,19.55309000000005,WGS 84,300
+Ameriflux,ARM-SGP Medford hay pasture,US-A32,-97.8198,36.8193,WGS 84,300
+Ameriflux,ARM-SGP-Morrison,US-A39,-96.069,36.3776,WGS 84,1000
+Ameriflux,ARM SGP milo field,US-A74,-97.5489,36.8085,WGS 84,500
+Ameriflux,Arkansas Grassland,US-AaG,-91.6282,33.1105,WGS 84,1000
+Ameriflux,Acton Lake Flux Tower Site,US-Act,-84.755,39.582,WGS 84,500
+Ameriflux,Amargosa Desert Research Site (ADRS),US-ADR,-116.6933,36.7653,WGS 84,300
+Ameriflux,MPG - Apricot Lane Farms,US-AF1,-118.9244,34.3108,WGS 84,500
+Ameriflux,Savannah River Site,US-Akn,-81.5653,33.3825,WGS 84,1000
+Ameriflux,Allequash Creek Site,US-ALQ,-89.6067,46.0308,WGS 84,500
+Ameriflux,Argonne Testbed for Multiscale Observational Science (ATMOS),US-AMS,-87.9963,41.7018,WGS 84,300
+Ameriflux,Low Density Apple Orchard,US-AoL,-85.7648,43.2513,WGS 84,1000
+Ameriflux,ARM USDA UNL OSU Woodward Switchgrass 1,US-AR1,-99.42,36.4267,WGS 84,1000
+Ameriflux,ARM USDA UNL OSU Woodward Switchgrass 2,US-AR2,-99.5975,36.6358,WGS 84,300
+Ameriflux,ARM Southern Great Plains burn site- Lamont,US-ARb,-98.0402,35.5497,WGS 84,1000
+Ameriflux,ARM Southern Great Plains control site- Lamont,US-ARc,-98.04,35.5465,WGS 84,500
+Ameriflux,ARM Southern Great Plains site- Lamont,US-ARM,-97.4888,36.6058,WGS 84,300
+Ameriflux,USSL San Joaquin Valley Almond High Salinity,US-ASH,-120.201,36.1697,WGS 84,1000
+Ameriflux,USSL San Joaquin Valley Almond Low Salinity,US-ASL,-120.1024,36.9466,WGS 84,300
+Ameriflux,USSL San Joaquin Valley Almond Medium Salinity,US-ASM,-120.2026,36.1777,WGS 84,300
+Ameriflux,Audubon Research Ranch,US-Aud,-110.5104,31.5907,WGS 84,500
+Ameriflux,Bartlett Experimental Forest,US-Bar,-71.2881,44.0646,WGS 84,1000
+Ameriflux,Blue Cypress Marsh,US-BCM,-80.7114,27.6953,WGS 84,1000
+Ameriflux,Burdette Farm Rice Field - 4N,US-Bd4,-89.9862,35.8139,WGS 84,300
+Ameriflux,Burdette Farm Rice Field - Seagraves South,US-Bd5,-90.0194,35.8105,WGS 84,1000
+Ameriflux,Burdette Farm Rice - Seagraves North,US-Bd6,-90.0194,35.814,WGS 84,300
+Ameriflux,Burdette Farm Rice Field - AWD,US-BdA,-90.0327,35.8089,WGS 84,1000
+Ameriflux,Burdette Farm Rice Field - conventional,US-BdC,-90.0284,35.8089,WGS 84,500
+Ameriflux,Big Chico Creek,US-BgC,-121.8135,39.8125,WGS 84,300
+Ameriflux,Bouldin Island Alfalfa,US-Bi1,-121.4993,38.0992,WGS 84,500
+Ameriflux,Bouldin Island corn,US-Bi2,-121.5351,38.1091,WGS 84,300
+Ameriflux,Brookings,US-Bkg,-96.8362,44.3453,WGS 84,300
+Ameriflux,Black Hills,US-Blk,-103.65,44.158,WGS 84,1000
+Ameriflux,Blodgett Forest,US-Blo,-120.6328,38.8953,WGS 84,300
+Ameriflux,Bangtail Mountain Meadow,US-BMM,-110.7776,45.783,WGS 84,500
+Ameriflux,Bondville,US-Bo1,-88.2904,40.0062,WGS 84,300
+Ameriflux,Bondville (companion site),US-Bo2,-88.29,40.009,WGS 84,300
+Ameriflux,Brooks Field Site 10- Ames,US-Br1,-93.6906,41.9749,WGS 84,1000
+Ameriflux,Brooks Field Site 1011- Ames,US-Br2,-93.6925,41.9757,WGS 84,300
+Ameriflux,Brooks Field Site 11- Ames,US-Br3,-93.6936,41.9747,WGS 84,500
+Ameriflux,Bayles Road Grassland Tower,US-BRG,-86.5406,39.2167,WGS 84,300
+Ameriflux,Burns Sagebrush,US-Bsg,-119.6909,43.4712,WGS 84,1000
+Ameriflux,Barnstable Great Marsh,US-BSM,-70.3644,41.7297,WGS 84,300
+Ameriflux,INFLUX - NIST Turfgrass Site,US-BWa,-77.2175,39.1389,WGS 84,1000
+Ameriflux,INFLUX - Montgomery County pasture site,US-BWb,-77.4509,39.1955,WGS 84,500
+Ameriflux,Canaan Valley,US-CaV,-79.4208,39.0633,WGS 84,1000
+Ameriflux,Coloma Corn 1,US-CC1,-89.6787,44.0732,WGS 84,500
+Ameriflux,Coloma Corn 2,US-CC2,-89.6196,44.1039,WGS 84,500
+Ameriflux,Cedar Mesa,US-CdM,-109.7471,37.5241,WGS 84,1000
+Ameriflux,Cedar Bridge,US-Ced,-74.3791,39.8379,WGS 84,500
+Ameriflux,CAF-LTAR Cook East,US-CF1,-117.0821,46.7815,WGS 84,500
+Ameriflux,CAF-LTAR Cook West,US-CF2,-117.0908,46.784,WGS 84,1000
+Ameriflux,CAF-LTAR Boyd North,US-CF3,-117.1261,46.7551,WGS 84,1000
+Ameriflux,CAF-LTAR Boyd South,US-CF4,-117.1285,46.7518,WGS 84,300
+Ameriflux,Concord Grazed Grassland,US-CGG,-121.9761,37.938,WGS 84,500
+Ameriflux,Chestnut Ridge,US-ChR,-84.3324,35.9311,WGS 84,500
+Ameriflux,Cole Farm,US-CLF,-77.9424,40.6366,WGS 84,300
+Ameriflux,Charleston Mesquite Woodland,US-CMW,-110.1777,31.6637,WGS 84,500
+Ameriflux,Coleman Cattle Farm,US-CN1,-94.39,38.74,WGS 84,300
+Ameriflux,Corral Pocket,US-Cop,-109.39,38.09,WGS 84,300
+Ameriflux,Chimney Park,US-CPk,-106.1187,41.068,WGS 84,500
+Ameriflux,Davy Crockett National Forest,US-CRK,-95.3415,31.4629,WGS 84,1000
+Ameriflux,Curtice Walter-Berger cropland,US-CRT,-83.3471,41.6285,WGS 84,1000
+Ameriflux,Central Sands Irrigated Agricultural Field,US-CS1,-89.5379,44.1031,WGS 84,300
+Ameriflux,Tri county school Pine Forest,US-CS2,-89.5002,44.1467,WGS 84,500
+Ameriflux,Central Sands Irrigated Agricultural Field,US-CS3,-89.5727,44.1394,WGS 84,300
+Ameriflux,Central Sands Irrigated Agricultural Field,US-CS4,-89.5475,44.1597,WGS 84,500
+Ameriflux,Central Sands Irrigated Agricultural Field,US-CS5,-89.5377,44.1095,WGS 84,300
+Ameriflux,Central Sands Irrigated Agricultural Field,US-CS6,-89.544,44.4297,WGS 84,1000
+Ameriflux,Central Sands Forest,US-CS7,-89.5443,44.4375,WGS 84,1000
+Ameriflux,Central Sands Irrigated Agricultural Field,US-CS8,-89.5364,44.4338,WGS 84,500
+Ameriflux,Crossett Experimental Forest,US-Cst,-91.9204,33.0442,WGS 84,1000
+Ameriflux,Cottonwood,US-Ctn,-101.8466,43.95,WGS 84,300
+Ameriflux,Coweeta Grassland,US-CwG,-83.3951,34.9682,WGS 84,500
+Ameriflux,Coweeta,US-Cwt,-83.4275,35.0592,WGS 84,500
+Ameriflux,"Central Plains Experimental Range 1, Nunn, Colorado",US-CX1,-104.76,40.833,WGS 84,1000
+Ameriflux,"Central Plains Experimental Range 2, Nunn, Colorado",US-CX2,-104.7672,40.8402,WGS 84,500
+Ameriflux,"Sierra Critical Zone, Sierra Transect, Oak/Pine Woodland, San Joaquin Experimental Range",US-CZ1,-119.7313,37.1088,WGS 84,300
+Ameriflux,"Sierra Critical Zone, Sierra Transect, Ponderosa Pine Forest, Soaproot Saddle",US-CZ2,-119.2566,37.0311,WGS 84,1000
+Ameriflux,"Sierra Critical Zone, Sierra Transect, Sierran Mixed Conifer, P301",US-CZ3,-119.1951,37.0674,WGS 84,1000
+Ameriflux,"Sierra Critical Zone, Sierra Transect, Subalpine Forest, Shorthair",US-CZ4,-118.9867,37.0675,WGS 84,1000
+Ameriflux,Berkeley Way West,US-DBk,-122.2684,37.8736,WGS 84,500
+Ameriflux,Dwarf Cypress Swamp,US-DCS,-80.9078,25.7626,WGS 84,500
+Ameriflux,California UC ANR Desert Research and Extension Center Alfalfa,US-Dea,-115.4423,32.8136,WGS 84,1000
+Ameriflux,California UC ANR Desert Research and Extension Center Urban Farm Tower,US-Deu,-115.4456,32.8056,WGS 84,300
+Ameriflux,"US Dairy Forage Research Center, Prairie du Sac",US-DFC,-89.7117,43.3448,WGS 84,300
+Ameriflux,Dairy Forage Research Center - Kernza,US-DFK,-89.7154,43.3453,WGS 84,1000
+Ameriflux,Diablo,US-Dia,-121.5296,37.6773,WGS 84,500
+Ameriflux,Fort Dix,US-Dix,-74.4346,39.9712,WGS 84,500
+Ameriflux,Duke Forest-open field,US-Dk1,-79.0934,35.9712,WGS 84,500
+Ameriflux,Duke Forest-hardwoods,US-Dk2,-79.1004,35.9736,WGS 84,500
+Ameriflux,Duke Forest - loblolly pine,US-Dk3,-79.0942,35.9782,WGS 84,500
+Ameriflux,Dutch Slough Marsh Gilbert Tract,US-Dmg,-121.6691,38.0015,WGS 84,500
+Ameriflux,Disney Wilderness Preserve Pine Flatwoods,US-DPP,-81.419,28.1046,WGS 84,1000
+Ameriflux,Disney Wilderness Preserve Wetland,US-DPW,-81.4361,28.0521,WGS 84,500
+Ameriflux,Staten Corn 1,US-DS1,-121.539,38.1335,WGS 84,300
+Ameriflux,Staten Corn 2,US-DS2,-121.514,38.1375,WGS 84,500
+Ameriflux,Staten Rice 1,US-DS3,-121.549,38.1235,WGS 84,500
+Ameriflux,EAA Field Research Park Woodland,US-EA4,-98.3816,29.6633,WGS 84,500
+Ameriflux,Uvalde Ranch Mesquite Woodland,US-EA5,-99.9576,29.3584,WGS 84,1000
+Ameriflux,Camp Wood Shield Ranch Oak Savannah,US-EA6,-99.9588,29.6561,WGS 84,500
+Ameriflux,Eden Landing Ecological Reserve,US-EDN,-122.114,37.6156,WGS 84,1000
+Ameriflux,Elkhorn Slough Hester Marsh,US-EKH,-121.7523,36.8094,WGS 84,500
+Ameriflux,Elkhorn Slough North Marsh,US-EKN,-121.7328,36.8357,WGS 84,1000
+Ameriflux,Elkhorn Slough Porter Marsh,US-EKP,-121.7488,36.8558,WGS 84,300
+Ameriflux,Elkhorn Slough Yampah Marsh,US-EKY,-121.7487,36.8105,WGS 84,1000
+Ameriflux,Everglades (long hydroperiod marsh),US-Elm,-80.7826,25.5519,WGS 84,1000
+Ameriflux,Edwards Plateau Martin,US-EPM,-99.8619,30.8167,WGS 84,1000
+Ameriflux,Everglades (short hydroperiod marsh),US-Esm,-80.5946,25.4379,WGS 84,300
+Ameriflux,Everglades Saltwater intrusion marsh,US-EvM,-80.381,25.3539,WGS 84,1000
+Ameriflux,Bob Allen Key LTER East,US-FBE,-80.6814,25.0266,WGS 84,1000
+Ameriflux,Flagstaff - Managed Forest,US-Fmf,-111.7273,35.1426,WGS 84,500
+Ameriflux,Fort Peck,US-FPe,-105.1019,48.3077,WGS 84,500
+Ameriflux,Freeman Ranch- Grassland,US-FR1,-98.01,29.93,WGS 84,500
+Ameriflux,Freeman Ranch- Mesquite Juniper,US-FR2,-97.9962,29.9495,WGS 84,1000
+Ameriflux,Freeman Ranch- Woodland,US-FR3,-97.99,29.94,WGS 84,1000
+Ameriflux,Flagstaff - Unmanaged Forest,US-Fuf,-111.762,35.089,WGS 84,1000
+Ameriflux,Flagstaff - Wildfire,US-Fwf,-111.7718,35.4454,WGS 84,500
+Ameriflux,GLEES Brooklyn Tower,US-GBT,-106.2397,41.3658,WGS 84,300
+Ameriflux,Georgia Coastal Ecosystems LTER Flux Tower,US-GCE,-81.2835,31.4441,WGS 84,500
+Ameriflux,Stannard Rock,US-GL1,-87.2251,47.1835,WGS 84,300
+Ameriflux,Granite Island,US-GL2,-87.4,46.7167,WGS 84,1000
+Ameriflux,GLEES,US-GLE,-106.2399,41.3665,WGS 84,1000
+Ameriflux,Great Mountain Forest,US-GMF,-73.2333,41.9667,WGS 84,500
+Ameriflux,Goodwin Creek,US-Goo,-89.8735,34.2547,WGS 84,300
+Ameriflux,"Genesee, ID On-farm site Zone 1",US-GZ1,-116.8068,46.5008,WGS 84,1000
+Ameriflux,"Genesee, ID On-farm site Zone 2",US-GZ2,-116.8047,46.4978,WGS 84,300
+Ameriflux,"Genesee, ID On-farm site Zone 3",US-GZ3,-116.8019,46.4949,WGS 84,1000
+Ameriflux,Harvard Forest EMS Tower (HFR1),US-Ha1,-72.1715,42.5378,WGS 84,500
+Ameriflux,Harvard Forest Hemlock Site,US-Ha2,-72.1779,42.5393,WGS 84,500
+Ameriflux,North Inlet Crab Haul Creek,US-HB1,-79.1957,33.3455,WGS 84,300
+Ameriflux,Hobcaw Barony Mature Longleaf Pine,US-HB2,-79.244,33.3242,WGS 84,1000
+Ameriflux,Hobcaw Barony Longleaf Pine Restoration,US-HB3,-79.2322,33.3482,WGS 84,500
+Ameriflux,Minim Creek Brackish Impoundment,US-HB4,-79.2975,33.2015,WGS 84,300
+Ameriflux,Hubbard Brook Experimental Forest,US-HBK,-71.7181,43.9397,WGS 84,1000
+Ameriflux,Hanford 300 Area,US-Hn1,-119.275,46.4089,WGS 84,1000
+Ameriflux,Hanford 100H grassland,US-Hn2,-119.4641,46.6889,WGS 84,1000
+Ameriflux,Hanford 100H sagebrush,US-Hn3,-119.4614,46.6878,WGS 84,300
+Ameriflux,Howland Forest (main tower),US-Ho1,-68.7402,45.2041,WGS 84,500
+Ameriflux,Howland Forest (west tower),US-Ho2,-68.747,45.2091,WGS 84,500
+Ameriflux,Howland Forest (harvest site),US-Ho3,-68.725,45.2072,WGS 84,300
+Ameriflux,Hawk Property,US-HPY,-74.0853,40.7692,WGS 84,500
+Ameriflux,Humnoke Farm Rice Field – Field A,US-HRA,-91.7517,34.5852,WGS 84,1000
+Ameriflux,Humnoke Farm Rice Field – Field C,US-HRC,-91.7517,34.5888,WGS 84,1000
+Ameriflux,Humnoke Carr North Rice Field,US-HRN,-91.7132,34.5955,WGS 84,300
+Ameriflux,Herring River Phragmites,US-HRP,-70.0552,41.938,WGS 84,500
+Ameriflux,Humnoke Carr South Rice Field,US-HRS,-91.7138,34.5922,WGS 84,300
+Ameriflux,Hill Slough Marsh,US-Hsm,-122.0212,38.2368,WGS 84,500
+Ameriflux,USDA ARS Pasture Sytems and Watershed Management Research Unit- Hawbecker Site,US-HWB,-77.8488,40.8608,WGS 84,1000
+Ameriflux,Fermi National Accelerator Laboratory- Batavia (Agricultural site),US-IB1,-88.2227,41.8593,WGS 84,1000
+Ameriflux,Fermi National Accelerator Laboratory- Batavia (Prairie site),US-IB2,-88.241,41.8406,WGS 84,300
+Ameriflux,Paspalum notatum long rotational grazing,US-IL1,-81.1996,27.1879,WGS 84,1000
+Ameriflux,INFLUX - Cemetery Turfgrass Tower,US-INa,-86.179,39.8273,WGS 84,500
+Ameriflux,INFLUX - Golf Course,US-INb,-86.0024,39.8706,WGS 84,300
+Ameriflux,INFLUX - Downtown Indianapolis (Site-3),US-INc,-86.1652,39.7833,WGS 84,300
+Ameriflux,INFLUX - Agricultural Site East near Pittsboro,US-INd,-86.5005,39.8645,WGS 84,500
+Ameriflux,INFLUX - Agricultural Site West near Pittsboro,US-INe,-86.5083,39.8632,WGS 84,1000
+Ameriflux,INFLUX - East 21st St (Site 2),US-INf,-86.0183,39.7978,WGS 84,300
+Ameriflux,INFLUX - Wayne Twp Comm (Site-7),US-INg,-86.2724,39.7739,WGS 84,500
+Ameriflux,INFLUX - Agricultural Site East of Indianapolis (Site-9a),US-INi,-85.7005,39.8167,WGS 84,500
+Ameriflux,INFLUX - Agricultural Site East of Indianapolis (Site-9b),US-INj,-85.7066,39.8766,WGS 84,300
+Ameriflux,INFLUX - Agricultural Site West of Indianapolis (Site-14a),US-INn,-86.788,39.9468,WGS 84,500
+Ameriflux,INFLUX - Agricultural Site West of Indianapolis (Site-14b) ,US-INp,-86.7821,39.9477,WGS 84,300
+Ameriflux,Jackson Lane - natural,US-JLN,-75.7531,39.0574,WGS 84,300
+Ameriflux,Jackson Lane - restored,US-JLR,-75.7531,39.0543,WGS 84,500
+Ameriflux,Jornada Experimental Range Bajada Site,US-Jo1,-106.635,32.582,WGS 84,300
+Ameriflux,Jornada Experimental Range Mixed Shrubland,US-Jo2,-106.6032,32.5849,WGS 84,1000
+Ameriflux,Jornada Experimental Range Red Lake Playa,US-Jo3,-106.8303,32.7123,WGS 84,300
+Ameriflux,WV Jacks Run,US-JRn,-80.1646,39.6789,WGS 84,300
+Ameriflux,KCMP Tall Tower,US-KCM,-93.0728,44.6886,WGS 84,500
+Ameriflux,Konza Prairie LTER (4B),US-KFB,-96.5951,39.0745,WGS 84,300
+Ameriflux,Kansas Field Station,US-KFS,-95.1907,39.0561,WGS 84,500
+Ameriflux,Kingman Farm,US-KGF,-70.9259,43.1717,WGS 84,300
+Ameriflux,KBS Lux Arbor Reserve Corn,US-KL1,-85.4422,42.4847,WGS 84,300
+Ameriflux,KBS Lux Arbor Reserve Switchgrass,US-KL2,-85.4468,42.4768,WGS 84,300
+Ameriflux,KBS Lux Arbor Reserve Prairie,US-KL3,-85.4473,42.4735,WGS 84,1000
+Ameriflux,Kansas Land Institute,US-KLS,-97.5684,38.7745,WGS 84,1000
+Ameriflux,KBS Marshall Farms Corn,US-KM1,-85.3287,42.4376,WGS 84,500
+Ameriflux,KBS Marshall Farms Prairie,US-KM2,-85.3098,42.4441,WGS 84,300
+Ameriflux,KBS Marshall Farms Switchgrass,US-KM3,-85.3105,42.4464,WGS 84,500
+Ameriflux,KBS Marshall Farms Smooth Brome Grass (Ref),US-KM4,-85.3301,42.4423,WGS 84,1000
+Ameriflux,Konza Prairie LTER (KNZ),US-Kon,-96.5603,39.0824,WGS 84,500
+Ameriflux,Kennedy Space Center (slash pine),US-KS1,-80.6709,28.4583,WGS 84,1000
+Ameriflux,Kennedy Space Center (scrub oak),US-KS2,-80.6715,28.6086,WGS 84,500
+Ameriflux,Kennedy Space Center (salt marsh),US-KS3,-80.7427,28.7084,WGS 84,1000
+Ameriflux,Kennedy Space Center (Spartina marsh),US-KS4,-80.7207,28.6,WGS 84,300
+Ameriflux,KUOM tower,US-KUO,-93.1884,44.9984,WGS 84,300
+Ameriflux,KUOM Turfgrass Field,US-KUT,-93.1863,44.995,WGS 84,300
+Ameriflux,Apple Orchard ARS Kearneysville WV,US-Kyv,-77.8859,39.3447,WGS 84,300
+Ameriflux,Pointe-aux-Chenes Brackish Marsh,US-LA1,-90.4449,29.5013,WGS 84,1000
+Ameriflux,Salvador WMA Freshwater Marsh,US-LA2,-90.2869,29.8587,WGS 84,500
+Ameriflux,Barataria Bay Saline Marsh,US-LA3,-89.9153,29.4936,WGS 84,300
+Ameriflux,Lockney Grassland,US-LGr,-101.4787,34.1377,WGS 84,500
+Ameriflux,Lindcove Orange Orchard,US-Lin,-119.0922,36.3566,WGS 84,300
+Ameriflux,Longleaf Pine - Baker (Mesic site),US-LL1,-84.5329,31.2792,WGS 84,1000
+Ameriflux,Longleaf Pine - Dubignion (Intermediate site),US-LL2,-84.4449,31.201,WGS 84,1000
+Ameriflux,Longleaf Pine - Red Dirt (Xeric site),US-LL3,-84.4787,31.2688,WGS 84,300
+Ameriflux,Lost Creek,US-Los,-89.9792,46.0827,WGS 84,500
+Ameriflux,Little Prospect Hill,US-LPH,-72.185,42.5419,WGS 84,1000
+Ameriflux,San Pedro River Lewis Springs Sacaton Grassland,US-LS1,-110.1403,31.5615,WGS 84,300
+Ameriflux,San Pedro River Lewis Springs Savanna,US-LS2,-110.1344,31.5659,WGS 84,1000
+Ameriflux,Missouri-Moreau River Basin USDA Certified Organic Farm,US-LU1,-92.2487,38.5048,WGS 84,500
+Ameriflux,Little Washita Watershed,US-LWW,-97.9789,34.9604,WGS 84,300
+Ameriflux,MacArthur Agro-Ecology,US-MAC,-81.1873,27.1632,WGS 84,300
+Ameriflux,Marcell Bog Lake Peatland,US-MBP,-93.4893,47.5051,WGS 84,300
+Ameriflux,"Creston, Montana pivot-irrigated spring wheat",US-MC1,-114.1548,48.1873,WGS 84,300
+Ameriflux,"Creston, Montana pivot-irrigated spring wheat 2",US-MC2,-114.2051,48.1802,WGS 84,300
+Ameriflux,"Moro Cojo Slough, PG&E Treatment Wetland",US-MCP,-121.769,36.783,WGS 84,1000
+Ameriflux,Metolius - Eyerly burn,US-Me1,-121.5,44.5794,WGS 84,500
+Ameriflux,Metolius mature ponderosa pine,US-Me2,-121.5589,44.4526,WGS 84,500
+Ameriflux,Metolius-second young aged pine,US-Me3,-121.6078,44.3154,WGS 84,500
+Ameriflux,Metolius-old aged ponderosa pine,US-Me4,-121.6224,44.4992,WGS 84,1000
+Ameriflux,Metolius-first young aged pine,US-Me5,-121.5668,44.4372,WGS 84,300
+Ameriflux,Metolius Young Pine Burn,US-Me6,-121.6078,44.3233,WGS 84,500
+Ameriflux,Metolius Low Burn Severity Subcanopy,US-Me7,-121.5619,44.4534,WGS 84,500
+Ameriflux,"Lake Mendota, Center for Limnology Site",US-Men,-89.403,43.0772,WGS 84,300
+Ameriflux,Moore Fields,US-MFs,-70.961,43.1385,WGS 84,500
+Ameriflux,MPG Ranch Rangeland Restoration,US-MG1,-114.0353,46.6996,WGS 84,300
+Ameriflux,"Huntley, Montana irrigated barley site 1",US-MH1,-108.2414,45.9206,WGS 84,300
+Ameriflux,"Huntley, Montana irrigated barley site 2",US-MH2,-108.1978,45.9699,WGS 84,500
+Ameriflux,LTAR UCB (Upper Chesapeake Bay) Miscanthus 1,US-Mi1,-80.6313,41.7727,WGS 84,1000
+Ameriflux,LTAR UCB (Upper Chesapeake Bay) Miscanthus 2,US-Mi2,-80.855,41.5479,WGS 84,300
+Ameriflux,LTAR UCB (Upper Chesapeake Bay) Miscanthus 3,US-Mi3,-80.637,41.8222,WGS 84,1000
+Ameriflux,Montana Judith Basin wheat field,US-Mj1,-109.6137,46.9948,WGS 84,300
+Ameriflux,Montana Judith Basin summer fallow field,US-Mj2,-109.6295,46.9957,WGS 84,500
+Ameriflux,Morgan Monroe State Forest,US-MMS,-86.4131,39.3232,WGS 84,300
+Ameriflux,"Morris: Corn-Soybean with Cover Crops, Strip Tillage",US-MN1,-96.1269,45.6168,WGS 84,500
+Ameriflux,"Morris: Corn-Soybean-Wheat with Cover Crops, Minimal Tillage",US-MN2,-96.1271,45.627,WGS 84,500
+Ameriflux,"Morris: Corn-Soybean, Conventional Tillage",US-MN3,-96.1265,45.6091,WGS 84,500
+Ameriflux,LTAR CMRB Field 1 (CMRB ASP),US-Mo1,-92.1167,39.2298,WGS 84,1000
+Ameriflux,LTAR CMRB Tucker Prairie (CMRB TP),US-Mo2,-91.9945,38.9488,WGS 84,300
+Ameriflux,LTAR CMRB Field 3 (CMRB BAU),US-Mo3,-92.1493,39.2322,WGS 84,300
+Ameriflux,Missouri Ozark Site,US-MOz,-92.2,38.7441,WGS 84,300
+Ameriflux,Mountainair Pinyon-Juniper Woodland,US-Mpj,-106.2377,34.4385,WGS 84,300
+Ameriflux,Mary's River (Fir) site,US-MRf,-123.5515,44.6465,WGS 84,1000
+Ameriflux,Marsh Resource Meadowlands Mitigation Bank,US-MRM,-74.0435,40.8164,WGS 84,300
+Ameriflux,Montana Sun River winter wheat ,US-MSR,-111.7207,47.4758,WGS 84,500
+Ameriflux,Mt Bigelow,US-MtB,-110.7256,32.416,WGS 84,300
+Ameriflux,Montana Vaughn Fallow,US-MVF,-111.4659,47.6867,WGS 84,500
+Ameriflux,Montana Vaughn Wheat,US-MVW,-111.4889,47.6729,WGS 84,500
+Ameriflux,Jackson Agricultural Field,US-MWA,-84.8539,42.2143,WGS 84,300
+Ameriflux,Kellogg Experimental Forest,US-MWF,-85.3526,42.366,WGS 84,300
+Ameriflux,Michigan State University Campus Site - Spartans,US-MWS,-84.4737,42.7293,WGS 84,300
+Ameriflux,Battle Creek Area Mathematics and Science Center,US-MWU,-85.1871,42.3228,WGS 84,300
+Ameriflux,Allegan Wetland,US-MWW,-86.0229,42.6689,WGS 84,1000
+Ameriflux,Mayberry Wetland,US-Myb,-121.765,38.0499,WGS 84,300
+Ameriflux,NC_Clearcut,US-NC1,-76.7119,35.8118,WGS 84,300
+Ameriflux,NC_Loblolly Plantation,US-NC2,-76.6685,35.803,WGS 84,300
+Ameriflux,NC_Clearcut#3,US-NC3,-76.656,35.799,WGS 84,500
+Ameriflux,NC_AlligatorRiver,US-NC4,-75.9038,35.7879,WGS 84,500
+Ameriflux,Mead - irrigated continuous maize site,US-Ne1,-96.4766,41.1651,WGS 84,1000
+Ameriflux,Mead - irrigated maize-soybean rotation site,US-Ne2,-96.4701,41.1649,WGS 84,500
+Ameriflux,Mead - rainfed maize-soybean rotation site,US-Ne3,-96.4397,41.1797,WGS 84,1000
+Ameriflux,Northern Michigan Jack Pine Stand,US-NMj,-88.5194,46.6465,WGS 84,300
+Ameriflux,Business-As-Usual Management (mandanh5),US-NP1,-100.951,46.7756,WGS 84,300
+Ameriflux,ASPirational Management (mandani2),US-NP2,-100.9257,46.7613,WGS 84,300
+Ameriflux,Niwot Ridge Forest (LTER NWT1),US-NR1,-105.5464,40.0329,WGS 84,300
+Ameriflux,Niwot Ridge Forest (USGS site),US-NR2,-105.5469,40.0325,WGS 84,300
+Ameriflux,Niwot Ridge Alpine (T-Van West),US-NR3,-105.5864,40.052,WGS 84,1000
+Ameriflux,Niwot Ridge Alpine (T-Van East),US-NR4,-105.5859,40.052,WGS 84,300
+Ameriflux,Nisqually reference,US-Nrf,-122.6927,47.0935,WGS 84,300
+Ameriflux,Nisqually restoring,US-Nrs,-122.7079,47.0936,WGS 84,1000
+Ameriflux,Newman Seasonal Wetlands,US-NSW,-121.0042,37.3091,WGS 84,1000
+Ameriflux,Osceola Farm Rice Field - SW,US-OF1,-90.0492,35.7371,WGS 84,500
+Ameriflux,Osceola Farm Rice Field - NW,US-OF2,-90.0489,35.7406,WGS 84,300
+Ameriflux,Oak Openings,US-Oho,-83.8438,41.5545,WGS 84,300
+Ameriflux,Florida pine flatwoods,US-ONA,-81.9509,27.3836,WGS 84,300
+Ameriflux,Optimizing Production Inputs for Economic and Environmental Enhancement (OPE3),US-OPE,-76.8457,39.0293,WGS 84,500
+Ameriflux,Olentangy River Wetland Research Park,US-ORv,-83.0183,40.0201,WGS 84,300
+Ameriflux,Old Woman Creek,US-OWC,-82.5125,41.3795,WGS 84,500
+Ameriflux,"Florida, Paspalum notatum pasture",US-PAS,-81.951,27.3944,WGS 84,300
+Ameriflux,5R Pecan Farm Above Canopy,US-PeA,-106.0788,31.4123,WGS 84,300
+Ameriflux,Park Falls/WLEF,US-PFa,-90.2723,45.9459,WGS 84,1000
+Ameriflux,NW1 Pine-1 CHEESEHEAD 2019,US-PFb,-90.3232,45.972,WGS 84,1000
+Ameriflux,NW2 Aspen-1 CHEESEHEAD 2019,US-PFc,-90.3088,45.9677,WGS 84,500
+Ameriflux,NW3 Tussock-1 CHEESEHEAD 2019,US-PFd,-90.301,45.9689,WGS 84,500
+Ameriflux,NW4 Lake-1 CHEESEHEAD 2019,US-PFe,-90.3004,45.9793,WGS 84,300
+Ameriflux,NW5 Grass-1 CHEESEHEAD 2019,US-PFf,-90.2944,45.9458,WGS 84,1000
+Ameriflux,NE1 Pine-2 CHEESEHEAD 2019,US-PFg,-90.2723,45.9735,WGS 84,300
+Ameriflux,NE2 Pine-3 CHEESEHEAD 2019,US-PFh,-90.2406,45.9557,WGS 84,300
+Ameriflux,NE3 Hardwood-1 CHEESEHEAD 2019,US-PFi,-90.2327,45.9749,WGS 84,500
+Ameriflux,NE4 Maple-1 CHEESEHEAD 2019,US-PFj,-90.227,45.9619,WGS 84,300
+Ameriflux,SW1 Aspen-2 CHEESEHEAD 2019,US-PFk,-90.3425,45.9149,WGS 84,500
+Ameriflux,SW2 Aspen-3 CHEESEHEAD 2019,US-PFL,-90.3177,45.9409,WGS 84,500
+Ameriflux,SW3 Hardwood-2 CHEESEHEAD 2019,US-PFm,-90.3099,45.9207,WGS 84,500
+Ameriflux,SW4 Hardwood-3 CHEESEHEAD 2019,US-PFn,-90.2823,45.9392,WGS 84,500
+Ameriflux,SE1 Lake-2 CHEESEHEAD 2019,US-PFo,-90.2728,45.9229,WGS 84,1000
+Ameriflux,SE2 Hardwood-4 CHEESEHEAD 2019,US-PFp,-90.2641,45.9365,WGS 84,1000
+Ameriflux,SE3 Aspen-4 CHEESEHEAD 2019,US-PFq,-90.2475,45.9271,WGS 84,1000
+Ameriflux,SE4 Tussock-2 CHEESEHEAD 2019,US-PFr,-90.2475,45.9245,WGS 84,1000
+Ameriflux,SE5 Aspen-5 CHEESEHEAD 2019,US-PFs,-90.2382,45.9381,WGS 84,300
+Ameriflux,SE6 Pine-4 CHEESEHEAD 2019,US-PFt,-90.2288,45.9197,WGS 84,1000
+Ameriflux,Plum Island High Marsh,US-PHM,-70.8301,42.7423,WGS 84,1000
+Ameriflux,Pine Upland,US-PiU,-80.9261,26.0004,WGS 84,1000
+Ameriflux,Plum Island Low Marsh,US-PLM,-70.8382,42.7345,WGS 84,500
+Ameriflux,Plum Island Oligohaline Marsh,US-PLo,-70.9157,42.7496,WGS 84,1000
+Ameriflux,"Lake Mendota, Picnic Point Site",US-Pnp,-89.4158,43.0896,WGS 84,1000
+Ameriflux,Ponca City,US-Pon,-97.1333,36.7667,WGS 84,1000
+Ameriflux,USSL San Joaquin Valley Pistachio High,US-PSH,-119.9247,36.2347,WGS 84,300
+Ameriflux,USSL San Joaquin Valley Pistachio Low,US-PSL,-120.1397,36.8276,WGS 84,300
+Ameriflux,PVAMU Research Farm,US-PVA,-95.9695,30.0958,WGS 84,1000
+Ameriflux,"Phoenix, Maryvale Neighborhood Site",US-Px1,-112.1426,33.4839,WGS 84,500
+Ameriflux,"Phoenix, Encanto Golf Course",US-Px2,-112.098,33.4785,WGS 84,1000
+Ameriflux,"Phoenix, Desert botanical garden site",US-Px3,-111.9428,33.4582,WGS 84,500
+Ameriflux,Cook Agronomy Farm - No Till,US-RC1,-117.0777,46.7837,WGS 84,300
+Ameriflux,Cook Agronomy Farm - Conventional Till,US-RC2,-117.0807,46.7776,WGS 84,500
+Ameriflux,WSU Lind Dryland Research Station,US-RC3,-118.598,46.991,WGS 84,500
+Ameriflux,Moscow Mountain on-farm site,US-RC4,-116.949,46.758,WGS 84,500
+Ameriflux,Moses Lake on-farm site,US-RC5,-119.248,47.01,WGS 84,300
+Ameriflux,RockyFlats - East site,US-RFE,-105.169,39.8771,WGS 84,300
+Ameriflux,RockyFlats - West site,US-RFW,-105.2184,39.8751,WGS 84,300
+Ameriflux,Arkansas Corn Farm,US-RGA,-91.6733,34.4159,WGS 84,1000
+Ameriflux,Butte County Rice Farm,US-RGB,-121.8579,39.5782,WGS 84,1000
+Ameriflux,Stanislaus County Forage Farm,US-RGF,-121.1369,37.6995,WGS 84,300
+Ameriflux,Glenn County Rice Farm,US-RGG,-122.0253,39.5944,WGS 84,300
+Ameriflux,Glenn County Organic Rice Farm,US-RGo,-122.0026,39.6805,WGS 84,1000
+Ameriflux,Desha County Rice Farm,US-RGW,-91.4306,33.6216,WGS 84,300
+Ameriflux,RCEW Low Sagebrush,US-Rls,-116.7356,43.1439,WGS 84,1000
+Ameriflux,RCEW Mountain Big Sagebrush,US-Rms,-116.7486,43.0645,WGS 84,500
+Ameriflux,Rosemount- G21,US-Ro1,-93.0898,44.7143,WGS 84,300
+Ameriflux,Rosemount- C7,US-Ro2,-93.0888,44.7288,WGS 84,300
+Ameriflux,Rosemount- G19,US-Ro3,-93.0893,44.7217,WGS 84,1000
+Ameriflux,Rosemount Prairie,US-Ro4,-93.0723,44.6781,WGS 84,500
+Ameriflux,Rosemount I18_South,US-Ro5,-93.0576,44.691,WGS 84,1000
+Ameriflux,Rosemount I18_North,US-Ro6,-93.0578,44.6946,WGS 84,500
+Ameriflux,Rice Rivers Center Marsh,US-RRC,-77.2065,37.3344,WGS 84,300
+Ameriflux,RCEW Reynolds Mountain East,US-Rwe,-116.7591,43.0653,WGS 84,500
+Ameriflux,RCEW Upper Sheep Prescibed Fire,US-Rwf,-116.7231,43.1207,WGS 84,1000
+Ameriflux,Reynolds Creek Wyoming big sagebrush,US-Rws,-116.7132,43.1675,WGS 84,500
+Ameriflux,Sweet Briar Land-Atmosphere Research Station,US-SB1,-79.0848,37.5734,WGS 84,1000
+Ameriflux,Sweet Briar Grass,US-SB2,-79.0883,37.5607,WGS 84,1000
+Ameriflux,Sweet Briar Clearcut,US-SB3,-79.0872,37.5752,WGS 84,300
+Ameriflux,Southern California Climate Gradient - Desert Chaparral,US-SCc,-116.4505,33.6094,WGS 84,500
+Ameriflux,Southern California Climate Gradient - Sonoran Desert,US-SCd,-116.3721,33.6518,WGS 84,300
+Ameriflux,Southern California Climate Gradient - Oak/Pine Forest,US-SCf,-116.7717,33.8079,WGS 84,500
+Ameriflux,Southern California Climate Gradient - Grassland,US-SCg,-117.6946,33.7365,WGS 84,500
+Ameriflux,Southern California Climate Gradient - Coastal Sage,US-SCs,-117.6959,33.7343,WGS 84,500
+Ameriflux,Southern California Climate Gradient - Pinyon/Juniper Woodland,US-SCw,-116.4527,33.6047,WGS 84,500
+Ameriflux,Nebraska SandHills Dry Valley,US-SdH,-101.4072,42.0693,WGS 84,300
+Ameriflux,South Denver Urban Tower,US-SDU,-105.0127,39.6594,WGS 84,500
+Ameriflux,Sevilleta grassland,US-Seg,-106.702,34.3623,WGS 84,300
+Ameriflux,Sevilleta shrubland,US-Ses,-106.7442,34.3349,WGS 84,500
+Ameriflux,Sioux Falls Portable,US-SFP,-96.902,43.2408,WGS 84,300
+Ameriflux,Sagehen Creek Field Station,US-SHC,-120.2398,39.4315,WGS 84,1000
+Ameriflux,Shidler- Oklahoma,US-Shd,-96.6833,36.9333,WGS 84,500
+Ameriflux,Secaucus High School Site,US-SHS,-74.0457,40.8052,WGS 84,300
+Ameriflux,Staten Island Fallow,US-Si1,-121.5047,38.1747,WGS 84,1000
+Ameriflux,Staten Island Flooded,US-Si2,-121.5167,38.1758,WGS 84,500
+Ameriflux,San Joaquin (Freshwater Marsh Tower 1),US-SJ1,-117.8514,33.6623,WGS 84,1000
+Ameriflux,San Joaquin (Freshwater Marsh Tower 2),US-SJ2,-117.855,33.6596,WGS 84,500
+Ameriflux,Shark River Slough (Tower SRS-6)  Everglades,US-Skr,-81.0776,25.3629,WGS 84,1000
+Ameriflux,Silas Little- New Jersey,US-Slt,-74.596,39.9138,WGS 84,1000
+Ameriflux,Texas SmartFarm Project,US-SM1,-100.9537,36.3934,WGS 84,300
+Ameriflux,Sherman Island,US-Snd,-121.754,38.0366,WGS 84,500
+Ameriflux,Sherman Island Restored Wetland,US-Sne,-121.7547,38.0369,WGS 84,1000
+Ameriflux,Sherman Barn,US-Snf,-121.7272,38.0402,WGS 84,300
+Ameriflux,Sky Oaks- Old Stand,US-SO2,-116.6228,33.3738,WGS 84,300
+Ameriflux,Sky Oaks- Young Stand,US-SO3,-116.6226,33.3771,WGS 84,1000
+Ameriflux,Sky Oaks- New Stand,US-SO4,-116.6406,33.3845,WGS 84,500
+Ameriflux,Slashpine-Austin Cary- 65yrs nat regen,US-SP1,-82.2188,29.7381,WGS 84,1000
+Ameriflux,"Slashpine-Mize-clearcut-3yr,regen",US-SP2,-82.2448,29.7648,WGS 84,500
+Ameriflux,Slashpine-Donaldson-mid-rot- 12yrs,US-SP3,-82.1633,29.7548,WGS 84,500
+Ameriflux,Slashpine-Rayonier-mid-rot- 12yrs,US-SP4,-82.2031,29.8028,WGS 84,500
+Ameriflux,Santa Rita Creosote,US-SRC,-110.8395,31.9083,WGS 84,300
+Ameriflux,Santa Rita Grassland,US-SRG,-110.8277,31.7894,WGS 84,500
+Ameriflux,Santa Rita Mesquite,US-SRM,-110.8661,31.8214,WGS 84,300
+Ameriflux,Suisun marsh - Rush Ranch,US-Srr,-122.0264,38.2006,WGS 84,300
+Ameriflux,Santa Rita Savanna,US-SRS,-110.8508,31.8173,WGS 84,300
+Ameriflux,Susquehanna Shale Hills Critical Zone Observatory,US-SSH,-77.9041,40.6658,WGS 84,500
+Ameriflux,Saratoga,US-Sta,-106.8024,41.3966,WGS 84,500
+Ameriflux,St Jones Reserve,US-StJ,-75.4372,39.0882,WGS 84,1000
+Ameriflux,Strawberry Swamp,US-StS,-79.2492,33.3302,WGS 84,1000
+Ameriflux,Sylvania Wilderness Area,US-Syv,-89.3477,46.242,WGS 84,300
+Ameriflux,"St. John, WA On-farm site Zone 1",US-SZ1,-117.5306,47.1245,WGS 84,500
+Ameriflux,"St. John, WA On-farm site Zone 2",US-SZ2,-117.5271,47.1226,WGS 84,500
+Ameriflux,"St. John, WA On-farm site Zone 3",US-SZ3,-117.5267,47.1261,WGS 84,1000
+Ameriflux,Taylor Slough/Panhandle,US-TaS,-80.6391,25.1908,WGS 84,1000
+Ameriflux,Tall Cypress Swamp,US-TCS,-81.1017,25.8221,WGS 84,1000
+Ameriflux,Tenderfoot Creek Experimental Forest,US-TEF,-110.8851,46.9522,WGS 84,1000
+Ameriflux,Thompson Farm Forest,US-TFF,-70.9523,43.1084,WGS 84,500
+Ameriflux,Tonzi Ranch,US-Ton,-120.966,38.4309,WGS 84,300
+Ameriflux,Trout Bog,US-TrB,-89.6862,46.0412,WGS 84,300
+Ameriflux,Trout Lake Area South Sparkling Bog,US-TrS,-89.7053,46.0034,WGS 84,1000
+Ameriflux,Turner Ranch,US-Tur,-111.2286,45.5571,WGS 84,300
+Ameriflux,Twitchell Wetland West Pond,US-Tw1,-121.6469,38.1074,WGS 84,500
+Ameriflux,Twitchell Corn,US-Tw2,-121.6365,38.0969,WGS 84,500
+Ameriflux,Twitchell Alfalfa,US-Tw3,-121.6469,38.1152,WGS 84,1000
+Ameriflux,Twitchell East End Wetland,US-Tw4,-121.6413,38.1027,WGS 84,500
+Ameriflux,East Pond Wetland,US-Tw5,-121.6426,38.1072,WGS 84,300
+Ameriflux,Twitchell Island,US-Twt,-121.6531,38.1087,WGS 84,1000
+Ameriflux,Stiles Farm Prairie,US-Tx1,-97.2938,30.6176,WGS 84,300
+Ameriflux,Riesel Farm Native Prairie,US-Tx2,-96.8827,31.4802,WGS 84,300
+Ameriflux,Riesel Farm Aspirational Agriculture,US-Tx3,-96.8883,31.4777,WGS 84,1000
+Ameriflux,Riesel Farm Traditional Agriculture,US-Tx4,-96.8865,31.4693,WGS 84,500
+Ameriflux,Texas A&M University Farm,US-Tx5,-96.4252,30.5328,WGS 84,300
+Ameriflux,La Copita Grassland - Savanna,US-Tx6,-98.2089,27.6666,WGS 84,300
+Ameriflux,La Copita Shrubland - Savanna,US-Tx7,-98.2007,27.665,WGS 84,500
+Ameriflux,Danciger Lowland Hardwood Forest,US-Tx8,-95.829,29.1659,WGS 84,500
+Ameriflux,Sargent Unit Salt Marsh,US-Tx9,-95.6144,28.7805,WGS 84,500
+Ameriflux,LTAR UCB (Upper Chesapeake Bay) EC1,US-UC1,-78.0056,40.7536,WGS 84,500
+Ameriflux,LTAR UCB (Upper Chesapeake Bay) EC2,US-UC2,-77.9998,40.7559,WGS 84,300
+Ameriflux,East River Riparian,US-UG1,-106.9524,38.923,WGS 84,1000
+Ameriflux,University of Illinois Switchgrass,US-UiA,-88.1961,40.0646,WGS 84,1000
+Ameriflux,University of Illinois Miscanthus,US-UiB,-88.1984,40.0628,WGS 84,500
+Ameriflux,University of Illinois Maize-Soy,US-UiC,-88.1961,40.0628,WGS 84,1000
+Ameriflux,University of Illinois Restored Native Prairie,US-UiD,-88.1985,40.0646,WGS 84,1000
+Ameriflux,University of Illinois Sorghum-Soy,US-UiE,-88.2033,40.0629,WGS 84,1000
+Ameriflux,University of Illinois Miscanthus 2,US-UiF,-88.2015,40.0665,WGS 84,500
+Ameriflux,University of Illinois Maize-Soy 2,US-UiG,-88.2009,40.0629,WGS 84,1000
+Ameriflux,ULM Flux Tower,US-ULM,-91.9743,32.457,WGS 84,1000
+Ameriflux,Douglas Lake,US-UM3,-84.6707,45.568600000000004,WGS 84,500
+Ameriflux,Univ. of Mich. Biological Station,US-UMB,-84.7138,45.5598,WGS 84,500
+Ameriflux,UMBS Disturbance,US-UMd,-84.6975,45.5625,WGS 84,1000
+Ameriflux,UFLUX Bonneville Salt Flats,US-UTB,-113.8299,40.7848,WGS 84,500
+Ameriflux,UFLUX Dugout Ranch,US-UTD,-109.5952,38.1038,WGS 84,1000
+Ameriflux,UFLUX Bluff,US-UTJ,-109.5348,37.2818,WGS 84,500
+Ameriflux,UFLUX Matheson,US-UTM,-109.5775,38.5879,WGS 84,500
+Ameriflux,UFLUX Nephi,US-UTN,-111.8814,39.6896,WGS 84,300
+Ameriflux,UFLUX Great Salt Lake Phragmites,US-UTP,-112.1013,41.0604,WGS 84,500
+Ameriflux,UFLUX Desert View,US-UTV,-109.9546,40.1266,WGS 84,1000
+Ameriflux,UFLUX Wellington,US-UTW,-110.7288,39.4453,WGS 84,300
+Ameriflux,Vaira Ranch- Ione,US-Var,-120.9508,38.4133,WGS 84,300
+Ameriflux,Valles Caldera Mixed Conifer,US-Vcm,-106.5321,35.8884,WGS 84,1000
+Ameriflux,Valles Caldera Ponderosa Pine,US-Vcp,-106.5967,35.8642,WGS 84,500
+Ameriflux,Valles Caldera Sulphur Springs Mixed Conifer,US-Vcs,-106.6142,35.9193,WGS 84,300
+Ameriflux,Virginia Coast Reserve Fowling Point,US-VFP,-75.8333,37.4111,WGS 84,300
+Ameriflux,Walker Branch Watershed,US-WBW,-84.2874,35.9588,WGS 84,1000
+Ameriflux,Willow Creek,US-WCr,-90.0799,45.8059,WGS 84,1000
+Ameriflux,Walden,US-Wdn,-106.2618,40.7838,WGS 84,1000
+Ameriflux,West Edge Parking Lot,US-WEP,-70.9543,43.1421,WGS 84,300
+Ameriflux,Willamette Grass,US-Wgr,-122.656,45.1129,WGS 84,500
+Ameriflux,Walnut Gulch Lucky Hills Shrub,US-Whs,-110.0522,31.7438,WGS 84,500
+Ameriflux,Young red pine (YRP),US-Wi0,-91.0814,46.6188,WGS 84,1000
+Ameriflux,Intermediate hardwood (IHW),US-Wi1,-91.2329,46.7305,WGS 84,1000
+Ameriflux,Intermediate red pine (IRP),US-Wi2,-91.1528,46.6869,WGS 84,1000
+Ameriflux,Mature hardwood (MHW),US-Wi3,-91.0987,46.6347,WGS 84,1000
+Ameriflux,Mature red pine (MRP),US-Wi4,-91.1663,46.7393,WGS 84,500
+Ameriflux,Mixed young jack pine (MYJP),US-Wi5,-91.0858,46.6531,WGS 84,300
+Ameriflux,Pine barrens #1 (PB1),US-Wi6,-91.2982,46.6249,WGS 84,1000
+Ameriflux,Red pine clearcut (RPCC),US-Wi7,-91.0693,46.6491,WGS 84,500
+Ameriflux,Young hardwood clearcut (YHW),US-Wi8,-91.2524,46.7223,WGS 84,300
+Ameriflux,Young Jack pine (YJP),US-Wi9,-91.0746,46.7385,WGS 84,1000
+Ameriflux,Willard Juniper Savannah,US-Wjs,-105.8615,34.4255,WGS 84,1000
+Ameriflux,Walnut Gulch Kendall Grasslands,US-Wkg,-109.9419,31.7365,WGS 84,1000
+Ameriflux,Walnut River Watershed (Smileyburg),US-Wlr,-96.855,37.5208,WGS 84,500
+Ameriflux,Willamette Poplar,US-Wpp,-123.1824,44.1369,WGS 84,300
+Ameriflux,Winous Point North Marsh,US-WPT,-82.9962,41.4646,WGS 84,500
+Ameriflux,Wind River Crane Site,US-Wrc,-121.9519,45.8205,WGS 84,1000
+Ameriflux,"Kress, TX no-till cotton and grain sorghum production",US-WT1,-101.8154,34.3674,WGS 84,300
+Ameriflux,Willamette Wheat,US-Wwt,-122.6664,45.1089,WGS 84,500
+Ameriflux,NEON Abby Road (ABBY),US-xAB,-122.3303,45.7624,WGS 84,300
+Ameriflux,NEON Klemme Range Research Station (OAES),US-xAE,-99.0588,35.4106,WGS 84,500
+Ameriflux,NEON Blandy Experimental Farm (BLAN),US-xBL,-78.0716,39.0603,WGS 84,500
+Ameriflux,NEON Bartlett Experimental Forest (BART),US-xBR,-71.2873,44.0639,WGS 84,1000
+Ameriflux,NEON LBJ National Grassland (CLBJ),US-xCL,-97.57,33.4012,WGS 84,500
+Ameriflux,NEON Central Plains Experimental Range (CPER),US-xCP,-104.7456,40.8155,WGS 84,500
+Ameriflux,NEON Dakota Coteau Field School (DCFS),US-xDC,-99.1066,47.1617,WGS 84,500
+Ameriflux,NEON Dead Lake (DELA),US-xDL,-87.8039,32.5417,WGS 84,500
+Ameriflux,NEON Disney Wilderness Preserve (DSNY),US-xDS,-81.4362,28.125,WGS 84,500
+Ameriflux,"NEON Great Smoky Mountains National Park, Twin Creeks (GRSM)",US-xGR,-83.5019,35.689,WGS 84,1000
+Ameriflux,NEON Harvard Forest (HARV),US-xHA,-72.1727,42.5369,WGS 84,300
+Ameriflux,NEON Jones Ecological Research Center (JERC),US-xJE,-84.4686,31.1948,WGS 84,300
+Ameriflux,NEON Jornada LTER (JORN),US-xJR,-106.8425,32.5907,WGS 84,1000
+Ameriflux,NEON Konza Prairie Biological Station - Relocatable (KONA),US-xKA,-96.6129,39.1104,WGS 84,1000
+Ameriflux,NEON Konza Prairie Biological Station (KONZ),US-xKZ,-96.5631,39.1008,WGS 84,1000
+Ameriflux,NEON Lenoir Landing (LENO),US-xLE,-88.1612,31.8539,WGS 84,1000
+Ameriflux,NEON Moab (MOAB),US-xMB,-109.3883,38.2483,WGS 84,500
+Ameriflux,NEON Mountain Lake Biological Station (MLBS),US-xML,-80.5248,37.3783,WGS 84,300
+Ameriflux,NEON Northern Great Plains Research Laboratory (NOGP),US-xNG,-100.9154,46.7697,WGS 84,300
+Ameriflux,NEON Onaqui-Ault (ONAQ),US-xNQ,-112.4524,40.1776,WGS 84,1000
+Ameriflux,NEON Niwot Ridge Mountain Research Station (NIWO),US-xNW,-105.5824,40.0543,WGS 84,500
+Ameriflux,"NEON Rocky Mountain National Park, CASTNET (RMNP)",US-xRM,-105.5459,40.2759,WGS 84,500
+Ameriflux,NEON Oak Ridge National Lab (ORNL),US-xRN,-84.2826,35.9641,WGS 84,1000
+Ameriflux,NEON Ordway-Swisher Biological Station (OSBS),US-xSB,-81.9934,29.6893,WGS 84,300
+Ameriflux,NEON Smithsonian Conservation Biology Institute (SCBI),US-xSC,-78.1395,38.8929,WGS 84,1000
+Ameriflux,NEON Smithsonian Environmental Research Center (SERC),US-xSE,-76.56,38.8901,WGS 84,1000
+Ameriflux,NEON San Joaquin Experimental Range (SJER),US-xSJ,-119.7323,37.1088,WGS 84,300
+Ameriflux,"NEON North Sterling, CO (STER)",US-xSL,-103.0293,40.4619,WGS 84,300
+Ameriflux,NEON Soaproot Saddle (SOAP),US-xSP,-119.26220000000001,37.0334,WGS 84,1000
+Ameriflux,NEON Santa Rita Experimental Range (SRER),US-xSR,-110.8355,31.9107,WGS 84,1000
+Ameriflux,NEON Steigerwaldt Land Services (STEI),US-xST,-89.5864,45.5089,WGS 84,500
+Ameriflux,NEON Talladega National Forest (TALL),US-xTA,-87.3933,32.9505,WGS 84,500
+Ameriflux,NEON Lower Teakettle (TEAK),US-xTE,-119.006,37.0058,WGS 84,1000
+Ameriflux,NEON Treehaven (TREE),US-xTR,-89.5857,45.4937,WGS 84,500
+Ameriflux,NEON The University of Kansas Field Station (UKFS),US-xUK,-95.1921,39.0404,WGS 84,1000
+Ameriflux,NEON University of Notre Dame Environmental Research Center (UNDE),US-xUN,-89.5373,46.2339,WGS 84,1000
+Ameriflux,NEON Woodworth (WOOD),US-xWD,-99.2414,47.1282,WGS 84,500
+Ameriflux,NEON Wind River Experimental Forest (WREF),US-xWR,-121.9519,45.8205,WGS 84,1000
+Ameriflux,NEON Yellowstone Northern Range (Frog Rock) (YELL),US-xYE,-110.5391,44.9535,WGS 84,1000
+Ameriflux,Yellow Cab urban,US-Ylw,-95.3536,29.7894,WGS 84,300

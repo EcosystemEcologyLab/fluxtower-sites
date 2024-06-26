@@ -1,12 +1,15 @@
+library(fs)
+library(amerifluxr)
+library(dplyr)
+library(tidyr)
+library(sf)
+library(readr)
 get_site_locs <- function(neon_kmz, neon_field_path) {
   
   # Ameriflux ---------------------------------------------------------------
   amf <- amf_site_info() |> 
     dplyr::filter(COUNTRY == "USA", !STATE %in% c("AK", "HI")) |> 
-    select(site_id = SITE_ID, site_name = SITE_NAME, lon = LOCATION_LONG, lat = LOCATION_LAT) |> 
-    st_as_sf(coords = c("lon", "lat"))
-  
-  st_crs(amf) <- "+proj=longlat"
+    select(site_id = SITE_ID, site_name = SITE_NAME, lon = LOCATION_LONG, lat = LOCATION_LAT)
 
   # NEON --------------------------------------------------------------------
   neon_kml <-
@@ -16,7 +19,7 @@ get_site_locs <- function(neon_kmz, neon_field_path) {
     filter(siteType == "Core Terrestrial")
   site_ids <- neon_core |> as_tibble() |> select(siteName, siteID)
   
-  neon_towers <- 
+  neon_towers <-
     st_read(neon_kml, layer = "NEON Core Terrestrial") |> 
     select(-Description) |> 
     separate(Name, into = c("Domain", "Name"), sep = " - ") |> 
@@ -32,7 +35,23 @@ get_site_locs <- function(neon_kmz, neon_field_path) {
      st_as_sf() |> 
     filter(!Domain %in% c(18:20, 4)) |> #exclude alaska and hawaii and carribean
     select(site_name = Name, site_id = siteID)
-
-  bind_rows(NEON = neon_towers, Ameriflux = amf, .id = "dataset")
+  
+  neon_towers <- 
+    neon_towers |>
+    mutate(lon = st_coordinates(neon_towers)[, "X"], lat = st_coordinates(neon_towers)[, "Y"]) |>
+    as_tibble() |>
+    select(-geometry)
+  
+  bind_rows(NEON = neon_towers, Ameriflux = amf, .id = "dataset") |> 
+    mutate(crs = "WGS 84") #I think this is correct
 
 }
+
+df <- 
+  get_site_locs(neon_kmz = "data/NEON_Field_Sites_KMZ_v18_Mar2023.kmz", neon_field_path = "data/Field_Sampling_Boundaries_2020/")
+
+#create some made-up radii for buffers around each point (in meters?)
+set.seed(123)
+df |> 
+  mutate(buffer_radius_m = sample(c(300, 500, 1000), size = n(), replace = TRUE)) |> 
+  write_csv("fluxtower_locations.csv")
