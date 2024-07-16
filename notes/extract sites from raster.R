@@ -20,6 +20,7 @@ source("R/calc_ffp_radius.R")
 root <- "d://AGB_cleaned/"
 
 # file_path <- path(root, "liu/liu_1993-2012.tif")
+# file_path <- path(root, "xu/xu_2000-2029.tif")
 file_path <- dir_ls(path(root, "esa_cci"), glob = "*.tif")
 
 
@@ -29,6 +30,9 @@ if (length(file_path) == 1){
 } else { #if it's tiles, read in as a vrt
   raster <- vrt(file_path)
 }
+
+#create weighting raster of ha/pixel
+raster_ha <- cellSize(raster, unit = "ha")
 
 #read in sites csv
 sites_df <- 
@@ -49,6 +53,11 @@ sites_sf <-
   #TODO an alternative here would be to pick a default radius if one can't be calculated
   filter(!is.na(radius))
 
+#TODO: would be good to double-check radii here---one site is quite large compared to others
+hist(sites_sf$radius)
+#I'm going to assume that one site is a mistake and remove it for now
+sites_sf <- sites_sf |> filter(radius < max(radius))
+
 sites_buffer <-
   sites_sf %>% 
   #create circle polygons with buffer in meters
@@ -56,27 +65,29 @@ sites_buffer <-
   #add column with folder name on snow
   mutate(product = unique(path_file(path_dir(file_path))))
 
-# extract total AGB from each site, weighted by the fraction of pixels covered by footprint
+# extract total AGB from each site
 df <- exact_extract(
   raster,
   sites_buffer,
-  fun = "sum",
+  fun = "weighted_sum", #sum(Mg/ha * fraction of pixel covered * ha/pixel) = total Mg
+  weights = raster_ha, #ha/pixel
   append_cols = TRUE,
-  force_df = TRUE
+  force_df = TRUE,
+  stack_apply = TRUE #can be done independently for each layer to save memory
 )
 
 # tidy data
 df_tidy <- df |> 
   pivot_longer(
-    starts_with("sum."),
+    starts_with("weighted_sum."),
     names_to = "year",
-    names_prefix = "sum.",
-    values_to = "agb"
+    names_prefix = "weighted_sum.", 
+    values_to = "agb_Mg"
   )
 
 # plot data to see if it worked
 library(ggplot2)
-ggplot(df_tidy, aes(x = year, y = agb, group = SITE_ID, color = SITE_ID)) +
+ggplot(df_tidy, aes(x = year, y = agb_Mg, group = SITE_ID, color = SITE_ID)) +
   geom_line(alpha = 0.4) +
   geom_point(aes(size = radius), alpha = 0.4) + #not good viz, just seeing if footprint radius matters much
   theme(legend.position = "none")
