@@ -7,8 +7,11 @@ library(units)
 library(tidyr)
 library(dplyr)
 
-# file_path <- "/Volumes/moore/AGB_cleaned/liu/liu_1993-2012.tif"
-file_path <- "/Volumes/moore/AGB_cleaned/esa_cci/esa.cci_N40W110_2010.2017-2020.tif"
+# root <- "/Volumes/moore/AGB_cleaned"
+root <- "d://AGB_cleaned/"
+
+# file_path <- path(root, "liu/liu_1993-2012.tif")
+file_path <- path(root, "esa_cci/esa.cci_N40W110_2010.2017-2020.tif")
 
 #read in raster with terra
 raster <- rast(file_path)
@@ -17,7 +20,7 @@ raster <- rast(file_path)
 sites_df <- 
   read_csv("fluxtower_locations.csv") 
 
-#conver to sf object
+#convert to sf object
 sites_sf <- 
   sites_df |> 
   st_as_sf(coords = c("lon", "lat")) |> 
