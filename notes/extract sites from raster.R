@@ -9,10 +9,6 @@ library(units)
 library(tidyr)
 library(dplyr)
 
-#TODO This doesn't work totally as I'd expect with s2 geometry on, but I get
-#errors with it off due to inability to calculate a buffer in degrees from a
-#radius in meters.  I think the solution is to project to a CRS that has units
-#of meters, not lat/lon maybe?
 sf_use_s2(TRUE)
 source("R/calc_ffp_radius.R")
 
@@ -28,7 +24,7 @@ file_path <- dir_ls(path(root, "esa_cci"), glob = "*.tif")
 if (length(file_path) == 1){
   raster <- rast(file_path)
 } else { #if it's tiles, read in as a vrt
-  raster <- vrt(file_path)
+  raster <- vrt(file_path, set_names = TRUE)
 }
 
 #create weighting raster of ha/pixel
@@ -83,7 +79,8 @@ df_tidy <- df |>
     names_to = "year",
     names_prefix = "weighted_sum.", 
     values_to = "agb_Mg"
-  )
+  ) |> 
+  mutate(year = as.integer(year))
 
 # plot data to see if it worked
 library(ggplot2)
