@@ -8,6 +8,11 @@ library(exactextractr)
 library(units)
 library(tidyr)
 library(dplyr)
+
+#TODO This doesn't work totally as I'd expect with s2 geometry on, but I get
+#errors with it off due to inability to calculate a buffer in degrees from a
+#radius in meters.  I think the solution is to project to a CRS that has units
+#of meters, not lat/lon maybe?
 sf_use_s2(TRUE)
 source("R/calc_ffp_radius.R")
 
