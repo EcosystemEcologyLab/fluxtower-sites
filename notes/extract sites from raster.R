@@ -20,10 +20,15 @@ source("R/calc_ffp_radius.R")
 root <- "d://AGB_cleaned/"
 
 # file_path <- path(root, "liu/liu_1993-2012.tif")
-file_path <- path(root, "esa_cci/esa.cci_N40W110_2010.2017-2020.tif")
+file_path <- dir_ls(path(root, "esa_cci"), glob = "*.tif")
+
 
 #read in raster with terra
-raster <- rast(file_path)
+if (length(file_path) == 1){
+  raster <- rast(file_path)
+} else { #if it's tiles, read in as a vrt
+  raster <- vrt(file_path)
+}
 
 #read in sites csv
 sites_df <- 
@@ -44,22 +49,14 @@ sites_sf <-
   #TODO an alternative here would be to pick a default radius if one can't be calculated
   filter(!is.na(radius))
 
-
-#get raster boundaries
-raster_bbox <- st_bbox(raster) |>
-  st_as_sfc() |> #needs to be sfc object
-  st_set_crs(crs(raster)) #needs to have CRS set
-
 sites_buffer <-
   sites_sf %>% 
-  # #filter sites to only those within raster boundaries
-  st_intersection(raster_bbox) %>%
   #create circle polygons with buffer in meters
   st_buffer(dist = set_units(.$radius, "m")) |> 
   #add column with folder name on snow
-  mutate(product = path_file(path_dir(file_path)))
+  mutate(product = unique(path_file(path_dir(file_path))))
 
-# extract total AGB from each site
+# extract total AGB from each site, weighted by the fraction of pixels covered by footprint
 df <- exact_extract(
   raster,
   sites_buffer,
@@ -81,5 +78,5 @@ df_tidy <- df |>
 library(ggplot2)
 ggplot(df_tidy, aes(x = year, y = agb, group = SITE_ID, color = SITE_ID)) +
   geom_line(alpha = 0.4) +
-  geom_point(aes(size = radius), alpha = 0.4) + #not good viz, just seeing if radius matters much
+  geom_point(aes(size = radius), alpha = 0.4) + #not good viz, just seeing if footprint radius matters much
   theme(legend.position = "none")
