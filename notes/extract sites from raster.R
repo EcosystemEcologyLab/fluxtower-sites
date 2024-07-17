@@ -49,10 +49,8 @@ sites_sf <-
   #TODO an alternative here would be to pick a default radius if one can't be calculated
   filter(!is.na(radius))
 
-#TODO: would be good to double-check radii here---one site is quite large compared to others
+#TODO: Could be good to do some data validation here
 hist(sites_sf$radius)
-#I'm going to assume that one site is a mistake and remove it for now
-sites_sf <- sites_sf |> filter(radius < max(radius))
 
 sites_buffer <-
   sites_sf %>% 
