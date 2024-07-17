@@ -6,23 +6,22 @@
 #'
 #' @param sites a tibble with columns LOCATION_LAT, LOCATION_LONG, ZM_F, avg_WS,
 #'   and avg_ustar
-#' @param raster_path path to either a .tif file or a directory of .tif files
-#'   for a tiled data product
+#' @param raster_dir path to a folder in AGB_cleaned/ containing a .tif or
+#'   multiple .tifs (when tiled) for a AGB product
 #'
 #' @return the sites tibble joined with columns for product, year, and agb_Mg
 #'
 #' @examples
 #' extract_agb(sites, "d://AGB_cleaned/esa_cci/")
-#' extract_agb(sites, "d://AGB_cleaned/menlove/menlove_2009-2019.tif")
-extract_agb <- function(sites, raster_path) {
+#' extract_agb(sites, "d://AGB_cleaned/menlove/")
+extract_agb <- function(sites, raster_dir) {
+  tifs <- fs::dir_ls(raster_dir, glo = "*.tif")
+  product_name <- fs::path_file(raster_dir)
   
-  if (fs::is_dir(raster_path)){ #if it's tiles, read in as a vrt
-    files <- dir_ls(raster_path, glob = "*.tif")
-    raster <- terra::vrt(files, set_names = TRUE)
-    product_name <- fs::path_file(raster_path)
-  } else if (fs::is_file(raster_path)) { #else just read it in as a SpatRaster
-    raster <- terra::rast(raster_path)
-    product_name <- fs::path_dir(raster_path)
+  if (length(tifs) > 1){ #if it's tiles, read in as a vrt
+    raster <- terra::vrt(tifs, set_names = TRUE)
+  } else { #else just read it in as a SpatRaster
+    raster <- terra::rast(tifs)
   }
   
   #create weighting raster of ha/pixel
