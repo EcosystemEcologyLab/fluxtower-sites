@@ -16,3 +16,6 @@ The goal of fluxtower-sites is to estimate total above ground biomass for the "f
 
 > [!NOTE] 
 > External data is required for this code to be reproducible.  See [EcosystemEcologyLab/AGB-products](https://github.com/EcosystemEcologyLab/AGB-products) for code and metadata on how this external data was created.
+
+------------------------------------------------------------------------
+Developed in collaboration with the University of Arizona [CCT Data Science](https://datascience.cct.arizona.edu/) team
