@@ -38,12 +38,13 @@ sites_df <-
 
 # Extract mean AGB for all products ---------------------------------------
 
-root <- "d://AGB_cleaned/"
-# root <- "/Volumes/moore/AGB_cleaned/"
+# root <- "d://AGB_cleaned/"
+root <- "/Volumes/moore/AGB_cleaned/"
 
 product_dirs <- dir_ls(root)
 
-# apply extract_mean_agb to all produts
+# apply extract_mean_agb to all products
+# Warning: this is super slow.  Maybe you want to just do one product at a time?
 
 agb_list <- map(product_dirs, \(.dir) {
   extract_mean_agb(
