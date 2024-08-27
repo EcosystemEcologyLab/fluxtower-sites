@@ -34,14 +34,14 @@ extract_mean_agb <- function(sites, lat, lon, radius, radius_units = "m", raster
 
   #convert sites tibble to sf object
   sites_sf <- 
-    sites_df |> 
+    sites |> 
     sf::st_as_sf(coords = c(lon, lat)) |> 
     sf::st_set_crs("WGS84") |> #I think this is safe to hard code
     #projet to whatever CRS the data product uses
     sf::st_transform(terra::crs(raster))
   
   #create polygons for flux tower footprints
-  radii <- sites_df[[{{ radius }}]]
+  radii <- sites[[{{ radius }}]]
   units(radii) <- radius_units
   sites_buffer <-
     sites_sf |> 
