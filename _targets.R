@@ -9,7 +9,7 @@ library(tarchetypes)
 
 # Set target options:
 tar_option_set(
-  packages = c("readr", "dplyr", "fs"), # Packages that your targets need for their tasks.
+  packages = c("readr", "dplyr", "fs", "sf", "exactextractr", "terra"), # Packages that your targets need for their tasks.
   # format = "qs", # Optionally set the default storage format. qs is fast.
   #
   # Pipelines that take a long time to run may benefit from
@@ -30,8 +30,9 @@ tar_source()
 
 
 # Mount point for Snow network drive
-snow <- "/Volumes/Projects/moore/"
+# snow <- "/Volumes/Projects/moore/"
 # snow <- "/Volumes/moore/"
+snow <- "//snow.snrenet.arizona.edu/projects/moore"
 
 # Replace the target list below with your own:
 list(
