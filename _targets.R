@@ -6,6 +6,7 @@
 # Load packages required to define the pipeline:
 library(targets)
 library(tarchetypes)
+library(fst)
 
 # Set target options:
 tar_option_set(
@@ -60,9 +61,16 @@ list(
       #fill in NAs with median
       mutate(ffp_radius = ifelse(is.na(ffp_radius), median(ffp_radius, na.rm = TRUE), ffp_radius))
   ),
+  #this lists all the product dirs
   tar_target(
     name = products,
-    command = dir_ls(path(snow, "AGB_cleaned")),
+    command = dir_ls(path(snow, "AGB_cleaned"))
+  ),
+  #this *tracks* the product dirs for changes based on last-modified date of files
+  tar_target(
+    name = product_dirs,
+    command = products,
+    pattern = map(products),
     format = "file_fast"
   ),
   tar_target(
@@ -72,10 +80,10 @@ list(
       lat = "LOCATION_LAT",
       lon = "LOCATION_LONG",
       radius = "ffp_radius",
-      raster_dir = products,
+      raster_dir = product_dirs,
       max_cells_in_memory = 1e+07 #prevent using too much RAM
     ),
-    pattern = map(products) #do this for every value of the `products` target (i.e. every dir in AGB_cleaned)
+    pattern = map(product_dirs), #do this for every product dir
+    format = "fst_tbl" #faster than the default rds format
   )
-  
 )
