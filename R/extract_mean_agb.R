@@ -8,22 +8,23 @@
 #' @param lon character; the name of the column with longitude data
 #' @param radius character; the name of the column with footprint radii
 #' @param radius_units character; the units that `radius` is in.
-#' @param raster_dir path to a folder in AGB_cleaned/ containing a .tif or
-#'   multiple .tifs (when tiled) for a AGB product
+#' @param raster_file path to either a single .tif file or a .vrt file in the
+#'   case of a tiled dataset
 #' @param ... other arguments passed to `exactextractr::exact_extract()`
 #'
 #' @return the sites tibble joined with columns for product, year, and agb_Mg_ha
 #'
 #' @examples
 #' extract_mean_agb(sites, lat = "LOCATION_LAT", lon = "LOCATION_LONG", radius = "ffp_radius", raster_dir = "d://AGB_cleaned/esa_cci/")
-extract_mean_agb <- function(sites, lat, lon, radius, radius_units = "m", raster_dir, ...) {
-  tifs <- fs::dir_ls(raster_dir, glob = "*.tif")
-  product_name <- fs::path_file(raster_dir)
+extract_mean_agb <- function(sites, lat, lon, radius, radius_units = "m", raster_file, ...) {
+  stopifnot(fs::path_ext(raster_file) %in% c("tif", "tiff", "vrt"))
   
-  if (length(tifs) > 1){ #if it's tiles, read in as a vrt
-    raster <- terra::vrt(tifs, set_names = TRUE)
+  product_name <- fs::path_dir(raster_file) |> fs::path_file()
+  
+  if (fs::path_ext(raster_file) == "vrt"){ #if it's tiles, read in as a vrt
+    raster <- terra::vrt(raster_file, set_names = TRUE)
   } else { #else just read it in as a SpatRaster
-    raster <- terra::rast(tifs)
+    raster <- terra::rast(raster_file)
   }
   
   #validate sites input has the correct columns
