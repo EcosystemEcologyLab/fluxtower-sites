@@ -7,6 +7,7 @@
 library(targets)
 library(tarchetypes)
 library(fst)
+library(fs)
 
 # Set target options:
 tar_option_set(
@@ -35,8 +36,7 @@ tar_source()
 # snow <- "/Volumes/moore/"
 snow <- "//snow.snrenet.arizona.edu/projects/moore"
 
-# Replace the target list below with your own:
-list(
+targets<- list(
   #track input file for changes
   tar_target(
     name = ffp_inputs_csv,
@@ -48,7 +48,6 @@ list(
     name = ffp_inputs,
     command = read_csv(ffp_inputs_csv)
   ),
-  
   #add radius column
   tar_target(
     name = ffp_radii,
@@ -61,29 +60,55 @@ list(
       #fill in NAs with median
       mutate(ffp_radius = ifelse(is.na(ffp_radius), median(ffp_radius, na.rm = TRUE), ffp_radius))
   ),
-  #this lists all the product dirs
-  tar_target(
-    name = products,
-    command = dir_ls(path(snow, "AGB_cleaned"))
-  ),
-  #this *tracks* the product dirs for changes based on last-modified date of files
-  tar_target(
-    name = product_dirs,
-    command = products,
-    pattern = map(products),
-    format = "file_fast"
-  ),
-  tar_target(
-    name = agb,
-    command = extract_mean_agb(
-      ffp_radii,
-      lat = "LOCATION_LAT",
-      lon = "LOCATION_LONG",
-      radius = "ffp_radius",
-      raster_dir = product_dirs,
-      max_cells_in_memory = 1e+07 #prevent using too much RAM
+  tar_map(
+    #for these rows...
+    values = tibble::tribble(
+      ~product,   ~file_path, #path relative to AGB_cleaned folder on Snow
+      "chopping", "chopping/chopping_2000-2021.tif",
+      "gedi",     "gedi/gedi_2019-2023.tif",
+      "hfbs",     "hfbs/hfbs_2010.tif",
+      "liu",      "liu/liu_1993-2012.tif",
+      "menlove",  "menlove/menlove_2009-2019.tif",
+      "xu",       "xu/xu_2000-2019.tif",
+      #these are tiled data sets so only track the .vrt file
+      "esa",      "esa_cci/esa_2010.2017-2020.vrt",
+      "gfw",      "gfw/gfw_2000.vrt",
+      "icesat",   "icesat/icesat_2020.vrt",
+      "ltgnn",    "lt_gnn/lt.gnn_1990-2017.vrt",
+      "nbcd",     "nbcd/nbcd_2000.vrt",
     ),
-    pattern = map(product_dirs), #do this for every product dir
-    format = "fst_tbl" #faster than the default rds format
+    names = product, #get target name suffix from `product` column
+    
+    #do these targets
+    tar_target(
+      name = file,
+      command = path(snow, "AGB_cleaned", file_path),
+      format = "file",
+      description = "track product files for changes"
+    ),
+    tar_target(
+      name = agb,
+      command = extract_mean_agb(
+        ffp_radii,
+        lat = "LOCATION_LAT",
+        lon = "LOCATION_LONG",
+        radius = "ffp_radius",
+        raster_file = file,
+        max_cells_in_memory = 1e+07 #prevent using too much RAM
+      )
+    ),
+    tar_target(
+      name = agb_csv,
+      command = write_agb(agb),
+      format = "file_fast"
+    )
   )
 )
+    
+  
+    # tar_target(
+    #   agb_csv,
+    #   write_agb(agb),
+    #   format = "file_fast"
+    # )
+  
