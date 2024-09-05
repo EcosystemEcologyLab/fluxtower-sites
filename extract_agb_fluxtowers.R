@@ -34,7 +34,7 @@ sites_df <-
 #     lat = "LOCATION_LAT",
 #     lon = "LOCATION_LONG",
 #     radius = "ffp_radius",
-#     raster_file = "d://AGB_cleaned/liu/liu_1993-2012.tif",
+#     raster_file = path(snow, "AGB_cleaned/liu/liu_1993-2012.tif"),
 #     max_cells_in_memory = 1e+07
 #   )
 
