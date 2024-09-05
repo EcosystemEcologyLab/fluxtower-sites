@@ -8,6 +8,10 @@ library(terra)
 source("R/calc_ffp_radius.R")
 source("R/extract_mean_agb.R")
 
+#windows
+snow <- "//snow.snrenet.arizona.edu/projects/moore"
+#macos
+# snow <- "/Volumes/moore"
 
 # Read in fluxtower site data ---------------------------------------------
 
@@ -22,7 +26,6 @@ sites_df <-
   #fill in NAs with median
   mutate(ffp_radius = ifelse(is.na(ffp_radius), median(ffp_radius, na.rm = TRUE), ffp_radius))
 
-
 # Extract mean AGB for a single product -----------------------------------
 
 # fluxtower_agb_liu <-
@@ -31,28 +34,37 @@ sites_df <-
 #     lat = "LOCATION_LAT",
 #     lon = "LOCATION_LONG",
 #     radius = "ffp_radius",
-#     raster_dir = "d://AGB_cleaned/liu/",
+#     raster_file = path(snow, "AGB_cleaned/liu/liu_1993-2012.tif"),
 #     max_cells_in_memory = 1e+07
 #   )
 
 
 # Extract mean AGB for all products ---------------------------------------
 
-# root <- "d://AGB_cleaned/"
-root <- "/Volumes/moore/AGB_cleaned/"
+#For tiled data products, there is a single .vrt file that can be opened with
+#terra::vrt().  For all other products, there is a single cloud optimized
+#geotiff. `extract_mean_agb()` is written to take either a .vrt or a .tif as
+#input
 
-product_dirs <- dir_ls(root)
+product_dirs <- dir_ls(path(snow, "AGB_cleaned"))
+vrts <- dir_ls(product_dirs, glob = "*.vrt")
+single_tif <- dir_ls(product_dirs[!product_dirs %in% path_dir(vrts)], glob = "*.tif")
+
+agb_files <- c(vrts, single_tif)
 
 # apply extract_mean_agb to all products
-# Warning: this is super slow.  Maybe you want to just do one product at a time?
+#
+# Warning: this is super slow.  Maybe you
+# want to just do one product at a time, paralellize with furrr::future_map(),
+# or use the `targets` version of this workflow by running `targets::tar_make()`
 
-agb_list <- map(product_dirs, \(.dir) {
+agb_list <- map(agb_files, \(.file) {
   extract_mean_agb(
     sites_df,
     lat = "LOCATION_LAT",
     lon = "LOCATION_LONG",
     radius = "ffp_radius",
-    raster_dir = .dir,
+    raster_file = .file,
     max_cells_in_memory = 1e+07
   )
 })
