@@ -101,7 +101,7 @@ targets<- list(
         lon = "LOCATION_LONG",
         radius = "ffp_radius",
         raster_file = file,
-        max_cells_in_memory = 1e+07 #prevent using too much RAM
+        max_cells_in_memory = 9e+06 #prevent using too much RAM
       ),
       pattern = map(ffp_radii),
       iteration = "vector"
@@ -113,11 +113,4 @@ targets<- list(
     )
   )
 )
-    
-  
-    # tar_target(
-    #   agb_csv,
-    #   write_agb(agb),
-    #   format = "file_fast"
-    # )
   
