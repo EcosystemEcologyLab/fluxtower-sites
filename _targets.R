@@ -46,19 +46,26 @@ targets<- list(
   #read in csv
   tar_target(
     name = ffp_inputs,
-    command = read_csv(ffp_inputs_csv)
+    command = read_csv(ffp_inputs_csv) |> 
+      dplyr::select(-any_of(c("...1", "X")))
   ),
-  #add radius column
+  #modis tiles
+  tar_target(
+    name = modis_file,
+    command = path(snow, "shapefiles/modis_grid"),
+    format = "file"
+  ),
+  tar_target(
+    name = modis,
+    command = read_sf(modis_file)
+  ),
+  #add radius column and modis tile
   tar_target(
     name = ffp_radii,
-    command = ffp_inputs |> 
-      mutate(ffp_radius = calc_ffp_radius(
-        zm = ZM_F,
-        wind_speed = avg_WS,
-        friction_velocity = avg_ustar
-      )) |>
-      #fill in NAs with median
-      mutate(ffp_radius = ifelse(is.na(ffp_radius), median(ffp_radius, na.rm = TRUE), ffp_radius))
+    command = prep_sites(ffp_inputs, modis) |>
+      dplyr::group_by(modis_tile) |>
+      targets::tar_group(),
+    iteration = "group"
   ),
   tar_map(
     #for these rows...
@@ -94,8 +101,10 @@ targets<- list(
         lon = "LOCATION_LONG",
         radius = "ffp_radius",
         raster_file = file,
-        max_cells_in_memory = 1e+07 #prevent using too much RAM
-      )
+        max_cells_in_memory = 9e+06 #prevent using too much RAM
+      ),
+      pattern = map(ffp_radii),
+      iteration = "vector"
     ),
     tar_target(
       name = agb_csv,
@@ -104,11 +113,4 @@ targets<- list(
     )
   )
 )
-    
-  
-    # tar_target(
-    #   agb_csv,
-    #   write_agb(agb),
-    #   format = "file_fast"
-    # )
   
