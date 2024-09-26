@@ -7,7 +7,7 @@
 calc_ffp_radius <- function(zm, wind_speed, friction_velocity){
   
   #define tower constants
-  footprint_fraction = 0.85 #valid for values 0.1 to 0.9
+  footprint_fraction = 0.80 #valid for values 0.1 to 0.9
   Kljun_param_c = 1.462 #see paper
   Kljun_param_d = 0.136 #see paper
   boundary_layer_height = 1000 #boundary layer assumed stable, so height = 1000m
@@ -17,7 +17,7 @@ calc_ffp_radius <- function(zm, wind_speed, friction_velocity){
   ffp_radius = 
     (((-Kljun_param_c)/(log(footprint_fraction))) + Kljun_param_d) *
     zm * ((1 - (zm / boundary_layer_height))^(-1)) *
-    ((wind_speed * zm) / friction_velocity) * von_Karman_constant
+    ((wind_speed) / friction_velocity) * von_Karman_constant
   
   return(ffp_radius)
 }
