@@ -1,0 +1,32 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Fluxtower Above-ground Biomass Intercomparison
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Eric R.
+    family-names: Scott
+    email: ericrscott@arizona.edu
+    affiliation: >-
+      University of Arizona, Communications & Cyber
+      Technologies
+    orcid: 'https://orcid.org/0000-0002-7430-7879'
+  - given-names: Lindsey M.
+    family-names: Bell
+    affiliation: >-
+      University of Arizona, School of Natural Resources &
+      The Environment
+  - given-names: David J.P.
+    family-names: Moore
+    email: davidjpmoore@arizona.edu
+    affiliation: >-
+      University of Arizona, School of Natural Resources &
+      The Environment
+    orcid: 'https://orcid.org/0000-0002-6462-3288'
+repository-code: 'https://github.com/EcosystemEcologyLab/fluxtower-sites'
+license: MIT
+version: v0.1.0
