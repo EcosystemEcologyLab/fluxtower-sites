@@ -1,7 +1,8 @@
 
-# fluxtower-sites
+# Fluxtower Above-ground Biomass Intercomparison
 
 <!-- badges: start -->
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 <!-- badges: end -->
 
 The goal of fluxtower-sites is to estimate total above ground biomass for the "footprints" of flux towers from a variety or raster data products.  This is a collaboration between [CCT Data Science](https://datascience.cct.arizona.edu/) and the [Moore lab](https://snre.arizona.edu/david-moore) at University of Arizona.
